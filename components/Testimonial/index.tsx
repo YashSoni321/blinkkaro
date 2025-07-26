@@ -41,7 +41,7 @@ const Testimonial = () => {
               y: 0,
             },
           }}
-          initial="hidden"
+          initial="visible"
           whileInView="visible"
           transition={{ duration: 1, delay: 0.1 }}
           viewport={{ once: true }}

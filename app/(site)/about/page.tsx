@@ -156,7 +156,7 @@ const AboutPage = () => {
                 name: "Gaurang Tyagi",
                 role: "COO & Co-founder",
                 bio: "Gaurang ensures operational excellence and strategic growth, bridging innovation with execution across all facets of Blinkkaro.",
-                image: "/images/user/user-03.png",
+                image: "/images/user/user-01.png",
               },
             ].map((founder, index) => (
               <div

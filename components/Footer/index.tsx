@@ -23,7 +23,7 @@ const Footer = () => {
                     y: 0,
                   },
                 }}
-                initial="hidden"
+                initial="visible"
                 whileInView="visible"
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
@@ -33,14 +33,14 @@ const Footer = () => {
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-light.svg"
+                    src="/images/logo/logo-light.png"
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-dark.svg"
+                    src="/images/logo/logo-dark.png"
                     alt="Logo"
                     className="hidden dark:block"
                   />
@@ -72,7 +72,7 @@ const Footer = () => {
                       y: 0,
                     },
                   }}
-                  initial="hidden"
+                  initial="visible"
                   whileInView="visible"
                   transition={{ duration: 1, delay: 0.1 }}
                   viewport={{ once: true }}
@@ -114,7 +114,7 @@ const Footer = () => {
                       y: 0,
                     },
                   }}
-                  initial="hidden"
+                  initial="visible"
                   whileInView="visible"
                   transition={{ duration: 1, delay: 0.1 }}
                   viewport={{ once: true }}
@@ -172,7 +172,7 @@ const Footer = () => {
                       y: 0,
                     },
                   }}
-                  initial="hidden"
+                  initial="visible"
                   whileInView="visible"
                   transition={{ duration: 1, delay: 0.1 }}
                   viewport={{ once: true }}
@@ -240,7 +240,7 @@ const Footer = () => {
                   y: 0,
                 },
               }}
-              initial="hidden"
+              initial="visible"
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
@@ -277,7 +277,7 @@ const Footer = () => {
                   y: 0,
                 },
               }}
-              initial="hidden"
+              initial="visible"
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
@@ -301,7 +301,7 @@ const Footer = () => {
                   y: 0,
                 },
               }}
-              initial="hidden"
+              initial="visible"
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}

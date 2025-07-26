@@ -22,9 +22,9 @@ const About = () => {
                   x: 0,
                 },
               }}
-              initial="hidden"
+              initial="visible"
               whileInView="visible"
-              transition={{ duration: 0.5, delay: 0.1 }}
+              //    transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
               className="animate_left relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
@@ -53,9 +53,8 @@ const About = () => {
                   x: 0,
                 },
               }}
-              initial="hidden"
               whileInView="visible"
-              transition={{ duration: 0.5, delay: 0.1 }}
+              //    transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
               className="animate_right md:w-1/2"
             >
@@ -131,7 +130,7 @@ const About = () => {
                   x: 0,
                 },
               }}
-              initial="hidden"
+              initial="visible"
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
@@ -183,7 +182,7 @@ const About = () => {
                   x: 0,
                 },
               }}
-              initial="hidden"
+              initial="visible"
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}

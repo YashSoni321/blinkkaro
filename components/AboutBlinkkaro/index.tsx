@@ -12,11 +12,18 @@ const AboutBlinkkaro = () => {
           {/* Left Side - Image */}
           <div className="w-full lg:w-1/2">
             <Image
-              src="/images/about-blinkkaro.png" // Replace with your actual image path
+              src="/images/logo/logo-light.png" // Replace with your actual image path
               alt="About Blinkkaro"
-              width={600}
-              height={400}
-              className="mx-auto rounded-lg shadow-lg dark:shadow-none"
+              width={400}
+              height={300}
+              className="mx-auto rounded-lg dark:hidden"
+            />
+            <Image
+              src="/images/logo/logo-dark.png" // Replace with your actual image path
+              alt="About Blinkkaro"
+              width={400}
+              height={300}
+              className="mx-auto hidden rounded-lg dark:block"
             />
           </div>
 

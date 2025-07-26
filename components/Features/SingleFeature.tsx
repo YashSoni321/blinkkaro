@@ -19,7 +19,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
             y: 0,
           },
         }}
-        initial="hidden"
+        initial="visible"
         whileInView="visible"
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
