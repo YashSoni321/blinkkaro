@@ -50,22 +50,23 @@ const Contact = () => {
     if (Object.keys(newErrors).length === 0) {
       try {
         // Send to backend first
-        await axios.post(BASE_API_URL + "waitlist", formData);
-
-        // Then trigger EmailJS
-        const result = await emailjs.send(
-          "service_rj8aotx", // from EmailJS dashboard
-          "template_4mom4d9", // from EmailJS dashboard
-          {
-            name: formData.name,
-            email: formData.email,
-            message: "Thank you for joining the Blink Karo waitlist!",
-          },
-          "V8uj_yvXLUcmreIAl", // EmailJS Public Key
-        );
+        const res = await axios.post(BASE_API_URL + "waitlist", formData);
+        if (res) {
+          // Then trigger EmailJS
+          await emailjs.send(
+            "service_rj8aotx", // from EmailJS dashboard
+            "template_4mom4d9", // from EmailJS dashboard
+            {
+              name: formData.name,
+              email: formData.email,
+              message: "Thank you for joining the Blink Karo waitlist!",
+            },
+            "V8uj_yvXLUcmreIAl", // EmailJS Public Key
+          );
+        }
       } catch (error) {
         console.error("Error submitting form or sending email:", error);
-        alert("Something went wrong. Please try again.");
+        // alert("Something went wrong. Please try again.");
       }
     }
   };
