@@ -50,7 +50,7 @@ const Contact = () => {
     if (Object.keys(newErrors).length === 0) {
       try {
         // Send to backend first
-        const res = await axios.post(BASE_API_URL + "waitlist", formData);
+        const res = await axios.post(BASE_API_URL + "waitlist/join", formData);
         if (res) {
           // Then trigger EmailJS
           await emailjs.send(
