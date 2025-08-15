@@ -1,0 +1,1 @@
+export const BASE_API_URL = "https://blinkkaro-api.onrender.com/api/v1/"
