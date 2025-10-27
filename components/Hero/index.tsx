@@ -29,7 +29,8 @@ const Hero = ({
     <>
       <section className="overflow-hidden pt-35 pb-20 md:pt-40 xl:pt-46 xl:pb-25">
         <div className="max-w-c-1390 mx-auto px-4 md:px-8 2xl:px-0">
-          <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-8 xl:gap-32.5">
+            {/* LEFT: TEXT */}
             <div className="md:w-1/2">
               <h4 className="mb-4.5 text-3xl font-medium text-black dark:text-white">
                 {title}
@@ -72,41 +73,51 @@ const Hero = ({
               )}
             </div>
 
+            {/* RIGHT: IMAGE */}
             <div className="animate_right hidden md:w-1/2 lg:block">
-              <div className="relative 2xl:-mr-7.5">
+              <div className="relative mx-auto w-full max-w-sm 2xl:-mr-7.5">
+                {/* Background glow / gradient */}
+                <div className="from-primary/10 absolute inset-0 rounded-full bg-gradient-to-tr via-purple-200/20 to-transparent blur-3xl"></div>
+
+                {/* Floating shapes */}
                 <Image
                   src="/images/shape/shape-01.png"
                   alt="shape"
-                  width={46}
-                  height={246}
-                  className="absolute top-0 -left-11.5"
+                  width={80}
+                  height={300}
+                  className="animate-bounce-slow absolute top-10 -left-14"
                 />
                 <Image
                   src="/images/shape/shape-02.svg"
                   alt="shape"
-                  width={36.9}
-                  height={36.7}
-                  className="absolute right-0 bottom-0 z-10"
+                  width={40}
+                  height={40}
+                  className="animate-float absolute top-20 right-0 z-10"
                 />
                 <Image
                   src="/images/shape/shape-03.svg"
                   alt="shape"
-                  width={21.64}
-                  height={21.66}
-                  className="absolute -right-6.5 bottom-0 z-1"
+                  width={20}
+                  height={20}
+                  className="animate-spin-slow absolute -right-8 bottom-10"
                 />
-                <div className="relative aspect-700/444 w-full">
+
+                {/* Example mini card (floating around phone) */}
+                <div className="animate-float-slow absolute bottom-20 -left-20 rounded-xl bg-white px-4 py-3 text-sm font-bold shadow-lg dark:bg-gray-800">
+                  🚀 Fast & Easy
+                </div>
+                <div className="animate-float-slow absolute top-24 -right-24 rounded-xl bg-white px-4 py-3 text-sm font-bold shadow-lg delay-200 dark:bg-gray-800">
+                  🎉 Coming Soon
+                </div>
+
+                {/* APP IMAGE */}
+                <div className="relative z-20 h-[600px] w-full">
                   <Image
-                    className="shadow-solid-l dark:hidden"
-                    src="/images/hero/hero-light.svg"
-                    alt="Hero"
+                    src="/images/blinkkaro-mobile/Login1.png"
+                    alt="App Screenshot"
                     fill
-                  />
-                  <Image
-                    className="shadow-solid-l hidden dark:block"
-                    src="/images/hero/hero-dark.svg"
-                    alt="Hero"
-                    fill
+                    className="object-contain drop-shadow-2xl"
+                    priority
                   />
                 </div>
               </div>
